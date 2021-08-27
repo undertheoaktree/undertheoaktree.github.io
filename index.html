@@ -18,6 +18,40 @@
 			font-family: 'Sorts Mill Goudy', serif;
 			margin: 0;
 		}
+
+		@media screen and (max-width: 600px)
+		{			
+			body header
+			{
+				padding: 0px 0vw 5vw;
+			}
+			
+			body header .main_title
+			{
+				padding: 0vw 5vw;
+			}
+			
+			body header .site_navigation a
+			{
+				padding: 28px 32px;
+			}
+			
+			body header .site_navigation
+			{
+				padding: 0vw 5vw;
+			}
+			
+			body header .cover_image
+			{
+				max-width: 100%;
+				width: 100%;
+			}
+			
+			body .site_main
+			{
+				padding: 0px 5vw 10px;
+			}
+		}
 		
 		header
 		{
@@ -122,13 +156,22 @@
 			margin: 0;
 			padding: 0px 0px 10px;
 		}
-		
+
+		.cover_image
+		{
+			width: 640px;
+			max-width: 75%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 1.5em;
+		}		
 	</style>
 	</head>
 
 	<body>
 		<header>
-			<img src="The_taking_of_Lone_Pine_(Fred_Leist).jpg" alt="The taking of Lone Pine (painting by Fred Leist).jpg" style="width: 640px; max-width: 75%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 1.5em">
+			<img class="cover_image" src="The_taking_of_Lone_Pine_(Fred_Leist).jpg" alt="The taking of Lone Pine (painting by Fred Leist).jpg">
 			<h1 class="main_title">Under the Oak Tree</h1>
 			<div class="site_navigation">
 				<a href="https://undertheoaktree.github.io">HOME</a>
