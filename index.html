@@ -52,6 +52,16 @@
 			{
 				padding: 0px 5vw 10px;
 			}
+			
+			body .content
+			{
+				width: 100%;
+			}
+			
+			.sidebar
+			{
+				display: none;
+			}
 		}
 		
 		header
@@ -71,6 +81,31 @@
 		h1
 		{
 			margin: 0;
+		}
+		
+		.red
+		{
+			color: Red;
+		}
+		
+		h2.blogroll
+		{
+			font-family: 'Sorts Mill Goudy', Georgia, serif;
+			font-size: 1.8rem;
+			margin: 0;
+			text-align: center;
+		}
+		
+		ul.blogroll
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		ul.blogroll a
+		{
+			color: Black;
 		}
 		
 		.title
@@ -115,20 +150,35 @@
 		.site_main
 		{
 			margin: 0;
-			padding: 1.5em 20% 10px;		
+			padding: 1.5em 10% 10px;
+		}
+		
+		.container
+		{
+			padding: 0px 4% 0px 0px;
+		}
+		
+		.content
+		{
+			position: relative;
+			width: 85%;
+			height: auto;
+			float: left;
+			padding: 0;
+		}
+		
+		.sidebar
+		{
+			position: relative;
+			width: 15%;
+			height: auto;
+			float: right;
+			padding: 0;
 		}
 		
 		.article
 		{
 			padding: 0px 0px 25px;
-		}
-		
-		.external_link
-		{
-			font-size: 0.8rem;
-			margin: 0;
-			padding: 0px 0px 5px;
-			font-family: 'IM Fell English', serif;
 		}
 		
 		.external_link
@@ -157,7 +207,7 @@
 			margin: 0;
 			padding: 0px 0px 10px;
 		}
-
+		
 		.cover_image
 		{
 			width: 640px;
@@ -166,13 +216,18 @@
 			margin-left: auto;
 			margin-right: auto;
 			padding-bottom: 1.5em;
-		}		
+		}
+		
+		hr
+		{
+			margin: 0px 0px 30px;
+		}
 	</style>
 	</head>
 
 	<body>
 		<header>
-			<img class="cover_image" src="The_Battle_of_the_Nile.jpg" alt="The Destruction of "L'Orient" at the Battle of the Nile (painting by George Arnald)">
+			<img class="cover_image" src="The_Battle_of_the_Nile.jpg" alt="The Destruction of L'Orient at the Battle of the Nile (painting by George Arnald)">
 			<h1 class="main_title">English Oak</h1>
 			<div class="site_navigation">
 				<a href="https://undertheoaktree.github.io">HOME</a>
@@ -183,166 +238,193 @@
 		</header>
 		
 		<div class="site_main">
-			<div class="article">
-				<p class="external_link"><a href="https://occidentaldissent.com/2021/11/02/new-york-times-lincoln-broke-our-constitution-then-he-remade-it/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://occidentaldissent.com/2021/11/02/new-york-times-lincoln-broke-our-constitution-then-he-remade-it/">New York Times: Lincoln Broke Our Constitution: Then He Remade It</a> <span class="external_site">(Occidental Dissent)</span></h2>
-				<p class="excerpt">"As a result of [Southern] defeat in that conflict, the Constitution died with the Confederacy."</p>
+			<div class="sidebar">
+				<h2 class="blogroll">Blogroll</h2>
+				<ul class="blogroll">
+					<li><a href="https://www.amren.com/">American Renaissance</a></li>
+					<li><a href="http://occidentaldissent.com/">Occidental Dissent</a></li>
+					<li><a href="https://www.revolver.news/">Revolver</a></li>
+					<li><a href="https://russia-insider.com/en">Russia Insider</a></li>
+					<li><a href="https://www.whitepeoplepress.com/">White People's Press, The</a></li>
+				</ul>
 			</div>
 			
-			<div class="article">
-				<p class="external_link"><a href="https://nationalfile.com/read-january-6-political-prisoner-nathan-degraves-horrifying-letter-from-d-c-jail-where-patriots-are-tortured/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://nationalfile.com/read-january-6-political-prisoner-nathan-degraves-horrifying-letter-from-d-c-jail-where-patriots-are-tortured/">Read January 6 Political Prisoner Nathan DeGrave’s Horrifying Letter From D.C. Jail, Where Patriots Are Tortured</a> <span class="external_site">(National File)</span></h2>
-				<p class="excerpt">"An inmate ... instead attempted to organize his own bible study inside the pod, until he was viciously BEATEN ... [h]e’s now permanently blind in one eye."</p>
-			</div>
+			<div class="container">
+				
+				<div class="content">
+				
+					<div class="article">
+						<p class="external_link">EXTERNAL LINKS</p>
+						<h2 class="title"><span class="red">What Really Happened at Charlottesville</span> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="external_link"><a href="https://www.amren.com/features/2021/10/what-really-happened-at-charlottesville-part-i/">PART I ↗</a></p>
+						<p class="external_link"><a href="https://www.amren.com/features/2021/10/what-really-happened-at-charlottesville-part-ii/">PART II ↗</a></p>
+						<p class="excerpt">A review of <i>Charlottesville Untold: Inside the Unite the Right Rally</i>.</p>
+					</div>
+					
+					<hr>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://occidentaldissent.com/2021/11/02/new-york-times-lincoln-broke-our-constitution-then-he-remade-it/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://occidentaldissent.com/2021/11/02/new-york-times-lincoln-broke-our-constitution-then-he-remade-it/">New York Times: Lincoln Broke Our Constitution: Then He Remade It</a> <span class="external_site">(Occidental Dissent)</span></h2>
+						<p class="excerpt">"As a result of [Southern] defeat in that conflict, the Constitution died with the Confederacy."</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://nationalfile.com/read-january-6-political-prisoner-nathan-degraves-horrifying-letter-from-d-c-jail-where-patriots-are-tortured/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://nationalfile.com/read-january-6-political-prisoner-nathan-degraves-horrifying-letter-from-d-c-jail-where-patriots-are-tortured/">Read January 6 Political Prisoner Nathan DeGrave’s Horrifying Letter From D.C. Jail, Where Patriots Are Tortured</a> <span class="external_site">(National File)</span></h2>
+						<p class="excerpt">"An inmate ... attempted to organize his own bible study inside the pod, until he was viciously BEATEN ... [h]e’s now permanently blind in one eye."</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.thegatewaypundit.com/2021/10/lincoln-project-statement-claims-credit-tiki-torch-false-flag-stunt-youngkin-campaign/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.thegatewaypundit.com/2021/10/lincoln-project-statement-claims-credit-tiki-torch-false-flag-stunt-youngkin-campaign/">Trump-Hating Lincoln Project Takes Credit for Tiki Torch False Flag Stunt Against Youngkin Campaign</a> <span class="external_site">(Gateway Pundit)</span></h2>
+						<p class="excerpt">A political false-flag stunt during a Virginia gubernatorial election.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/commentary/2021/10/who-decides-what-kids-should-be-taught/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/commentary/2021/10/who-decides-what-kids-should-be-taught/">Who Decides What Kids Should Be Taught?</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">A pressing issue.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/features/2021/10/adored-now-for-what-he-was-once-hated/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/features/2021/10/adored-now-for-what-he-was-once-hated/">Adored Now for What He Was Once Hated</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">Radical Republican Thaddeus Stevens and a new book praising the horrible man.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/videos/2021/10/britain-needs-its-own-algerian-jew/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/videos/2021/10/britain-needs-its-own-algerian-jew/">Britain Needs Its Own Algerian Jew</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">French-born Algerian Jew gains popularity within French Right.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://affirmativeright.blogspot.com/2021/10/the-curious-case-of-butchered.html">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://affirmativeright.blogspot.com/2021/10/the-curious-case-of-butchered.html">The Curious Case Of The Butchered Backbencher</a> <span class="external_site">(Affirmative Right)</span></h2>
+						<p class="excerpt">MP Sir David Amess may have been killed for his Qatari ties.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://affirmativeright.blogspot.com/2019/01/the-masonic-geometry-of-britains-naval.html">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://affirmativeright.blogspot.com/2019/01/the-masonic-geometry-of-britains-naval.html">The "Masonic" Geometry of Britain's Naval Dominance</a> <span class="external_site">(Affirmative Right)</span></h2>
+						<p class="excerpt">Examining the locations of Horatio Nelson's naval battles.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/news/2021/10/call-of-the-wild/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/news/2021/10/call-of-the-wild/">Call of the Wild</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">The Muslim call to prayer is an increasingly common sound across the West.</p>
+					</div>	
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/news/2021/10/google-quietly-tweaks-image-search-for-racially-diverse-results/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/news/2021/10/google-quietly-tweaks-image-search-for-racially-diverse-results/">Google Quietly Tweaks Image Search for Racially Diverse Results</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">The corporate march against "racist" algorithms continues.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/news/2021/10/are-immigrants-less-willing-to-report-crime/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/news/2021/10/are-immigrants-less-willing-to-report-crime/">Are Immigrants Less Willing to Report Crime?</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">No.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/commentary/2021/10/u-s-kids-cant-read-write-or-do-math-but-are-no-1-in-critical-race-theory/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/commentary/2021/10/u-s-kids-cant-read-write-or-do-math-but-are-no-1-in-critical-race-theory/">U.S. Kids Can’t Read, Write or Do Math, but Are No. 1 in Critical Race Theory</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">"Homegrown retardation" has infested the United States.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/commentary/2021/10/when-whistleblowers-are-censors/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/commentary/2021/10/when-whistleblowers-are-censors/">When ‘Whistleblowers’ Are Censors</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">Calls for more censorship, and Facebook's blacklist revealed.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link">EXTERNAL LINKS</p>
+						<h2 class="title">What Really Happened at Charlottesville <span class="external_site">(American Renaissance)</span></h2>
+						<p class="external_link"><a href="https://www.amren.com/features/2021/10/what-really-happened-at-charlottesville-part-i/">PART I ↗</a></p>
+						<p class="external_link"><a href="https://www.amren.com/features/2021/10/what-really-happened-at-charlottesville-part-ii/">PART II ↗</a></p>
+						<p class="excerpt">A review of <i>Charlottesville Untold: Inside the Unite the Right Rally</i>.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/features/2021/10/shifting-alliances-black-red-and-white/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/features/2021/10/shifting-alliances-black-red-and-white/">Shifting Alliances: Black, Red, and White</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">A review of <i>Runaway Masters: A True Story of Slavery, Freedom, Triumph, and Tragedy Beyond 1619 and 1776</i>, a book about the Seminole Indians.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/news/2021/09/multicultural-hell-comes-to-america/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/news/2021/09/multicultural-hell-comes-to-america/">Multicultural Hell Comes to America</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">"On September 11, 2001, multiculturalism came to America in a firestorm of glass and steel."</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/videos/2021/09/20-years-after-9-11/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/videos/2021/09/20-years-after-9-11/">20 Years After 9-11</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">"Have we learned <i>anything</i>?"</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/features/2021/09/the-lee-statue-and-the-rebellion-to-come/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/features/2021/09/the-lee-statue-and-the-rebellion-to-come/">The Lee Statue and the Rebellion to Come</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">"Jackals in Richmond" took down Robert E. Lee's statue.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://youtu.be/8dCuSBJtZlk">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://youtu.be/8dCuSBJtZlk">Inside an Abandoned Mansion That 150 Taliban Now Call Home</a> <span class="external_site">(YouTube)</span></h2>
+						<p class="excerpt">Taliban fighters give a tour of an Afghan warlord's opulent mansion.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/news/2021/08/as-south-africa-teeters-orania-soldiers-on-to-prosperity/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/news/2021/08/as-south-africa-teeters-orania-soldiers-on-to-prosperity/">As South Africa Teeters, Orania Soldiers on to Prosperity</a> <span class="external_site">(Affirmative Right)</span></h2>
+						<p class="excerpt">An Afrikaner-only town prospers amid national riots.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://affirmativeright.blogspot.com/2021/08/mememitis-disease-of-dissident-right.html">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://affirmativeright.blogspot.com/2021/08/mememitis-disease-of-dissident-right.html">Memeitis, the disease of the Dissident Right</a> <span class="external_site">(Affirmative Right)</span></h2>
+						<p class="excerpt">Bad memes are misinforming people on the War in Afghanistan.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.theoccidentalobserver.net/2021/08/17/kabullshit/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.theoccidentalobserver.net/2021/08/17/kabullshit/">Kabullshit</a> <span class="external_site">(Occidental Observer)</span></h2>
+						<p class="excerpt">"...the real reasons Western countries poured trillions of dollars into [the War in Afghanistan] was because there were real potential benefits to our power elites..."</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/commentary/2021/03/yes-whites-did-build-this-country/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/commentary/2021/03/yes-whites-did-build-this-country/">Yes, Whites Did Build This Country</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">There would be no United States of America without whites.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.amren.com/features/2021/08/the-war-comes-home/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.amren.com/features/2021/08/the-war-comes-home/">The War Comes Home</a> <span class="external_site">(American Renaissance)</span></h2>
+						<p class="excerpt">A reflection on 9/11, the War in Afghanistan, and American society.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://www.revolver.news/2021/08/eu-urgent-memo-highlights-right-wing-memes/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://www.revolver.news/2021/08/eu-urgent-memo-highlights-right-wing-memes/">EU Releases Urgent Memo Highlighting The Dangers of “Right Wing” Memes</a> <span class="external_site">(Revolver)</span></h2>
+						<p class="excerpt">EU report analyses threat of right-wing memes to globalist order.</p>
+					</div>
+					
+					<div class="article">
+						<p class="external_link"><a href="https://summit.news/2021/07/20/top-health-officer-orders-australians-dont-have-a-conversation-with-each-other/">EXTERNAL LINK ↗</a></p>
+						<h2 class="title"><a href="https://summit.news/2021/07/20/top-health-officer-orders-australians-dont-have-a-conversation-with-each-other/">Top Health Officer Orders Australians: ‘Don’t Have a Conversation’ With Each Other</a> <span class="external_site">(Summit News)</span></h2>
+						<p class="excerpt">NSW official: "Whilst it is in human nature to engage in conversation with others, to be friendly, unfortunately this is not the time to do that.”</p>
+					</div>
+					
+				</div> 		<!-- end of .content -->
+			</div>			<!-- end of .container -->
 			
-			<div class="article">
-				<p class="external_link"><a href="https://www.thegatewaypundit.com/2021/10/lincoln-project-statement-claims-credit-tiki-torch-false-flag-stunt-youngkin-campaign/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.thegatewaypundit.com/2021/10/lincoln-project-statement-claims-credit-tiki-torch-false-flag-stunt-youngkin-campaign/">Trump-Hating Lincoln Project Takes Credit for Tiki Torch False Flag Stunt Against Youngkin Campaign</a> <span class="external_site">(Gateway Pundit)</span></h2>
-				<p class="excerpt">A political false-flag stunt during a Virginia gubernatorial election.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/commentary/2021/10/who-decides-what-kids-should-be-taught/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/commentary/2021/10/who-decides-what-kids-should-be-taught/">Who Decides What Kids Should Be Taught?</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">A pressing issue.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/features/2021/10/adored-now-for-what-he-was-once-hated/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/features/2021/10/adored-now-for-what-he-was-once-hated/">Adored Now for What He Was Once Hated</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">Radical Republican Thaddeus Stevens and a new book praising the horrible man.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/videos/2021/10/britain-needs-its-own-algerian-jew/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/videos/2021/10/britain-needs-its-own-algerian-jew/">Britain Needs Its Own Algerian Jew</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">French-born Algerian Jew gains popularity within French Right.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://affirmativeright.blogspot.com/2021/10/the-curious-case-of-butchered.html">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://affirmativeright.blogspot.com/2021/10/the-curious-case-of-butchered.html">The Curious Case Of The Butchered Backbencher</a> <span class="external_site">(Affirmative Right)</span></h2>
-				<p class="excerpt">MP Sir David Amess may have been killed for his Qatari ties.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://affirmativeright.blogspot.com/2019/01/the-masonic-geometry-of-britains-naval.html">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://affirmativeright.blogspot.com/2019/01/the-masonic-geometry-of-britains-naval.html">The "Masonic" Geometry of Britain's Naval Dominance</a> <span class="external_site">(Affirmative Right)</span></h2>
-				<p class="excerpt">Examining the locations of Horatio Nelson's naval battles.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/news/2021/10/call-of-the-wild/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/news/2021/10/call-of-the-wild/">Call of the Wild</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">The Muslim call to prayer is an increasingly common sound across the West.</p>
-			</div>	
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/news/2021/10/google-quietly-tweaks-image-search-for-racially-diverse-results/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/news/2021/10/google-quietly-tweaks-image-search-for-racially-diverse-results/">Google Quietly Tweaks Image Search for Racially Diverse Results</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">The corporate march against "racist" algorithms continues.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/news/2021/10/are-immigrants-less-willing-to-report-crime/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/news/2021/10/are-immigrants-less-willing-to-report-crime/">Are Immigrants Less Willing to Report Crime?</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">No.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/commentary/2021/10/u-s-kids-cant-read-write-or-do-math-but-are-no-1-in-critical-race-theory/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/commentary/2021/10/u-s-kids-cant-read-write-or-do-math-but-are-no-1-in-critical-race-theory/">U.S. Kids Can’t Read, Write or Do Math, but Are No. 1 in Critical Race Theory</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">"Homegrown retardation" has infested the United States.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/commentary/2021/10/when-whistleblowers-are-censors/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/commentary/2021/10/when-whistleblowers-are-censors/">When ‘Whistleblowers’ Are Censors</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">Calls for more censorship, and Facebook's blacklist revealed.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link">EXTERNAL LINKS</p>
-				<h2 class="title">What Really Happened at Charlottesville <span class="external_site">(American Renaissance)</span></h2>
-				<p class="external_link"><a href="https://www.amren.com/features/2021/10/what-really-happened-at-charlottesville-part-i/">PART I ↗</a></p>
-				<p class="external_link"><a href="https://www.amren.com/features/2021/10/what-really-happened-at-charlottesville-part-ii/">PART II ↗</a></p>
-				<p class="excerpt">A review of <i>Charlottesville Untold: Inside the Unite the Right Rally</i>.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/features/2021/10/shifting-alliances-black-red-and-white/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/features/2021/10/shifting-alliances-black-red-and-white/">Shifting Alliances: Black, Red, and White</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">A review of <i>Runaway Masters: A True Story of Slavery, Freedom, Triumph, and Tragedy Beyond 1619 and 1776</i>, a book about the Seminole Indians.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/news/2021/09/multicultural-hell-comes-to-america/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/news/2021/09/multicultural-hell-comes-to-america/">Multicultural Hell Comes to America</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">"On September 11, 2001, multiculturalism came to America in a firestorm of glass and steel."</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/videos/2021/09/20-years-after-9-11/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/videos/2021/09/20-years-after-9-11/">20 Years After 9-11</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">"Have we learned <i>anything</i>?"</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/features/2021/09/the-lee-statue-and-the-rebellion-to-come/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/features/2021/09/the-lee-statue-and-the-rebellion-to-come/">The Lee Statue and the Rebellion to Come</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">"Jackals in Richmond" took down Robert E. Lee's statue.</p>
-			</div>
-
-			<div class="article">
-				<p class="external_link"><a href="https://youtu.be/8dCuSBJtZlk">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://youtu.be/8dCuSBJtZlk">Inside an Abandoned Mansion That 150 Taliban Now Call Home</a> <span class="external_site">(YouTube)</span></h2>
-				<p class="excerpt">Taliban fighters give a tour of an Afghan warlord's opulent mansion.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/news/2021/08/as-south-africa-teeters-orania-soldiers-on-to-prosperity/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/news/2021/08/as-south-africa-teeters-orania-soldiers-on-to-prosperity/">As South Africa Teeters, Orania Soldiers on to Prosperity</a> <span class="external_site">(Affirmative Right)</span></h2>
-				<p class="excerpt">An Afrikaner-only town prospers amid national riots.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://affirmativeright.blogspot.com/2021/08/mememitis-disease-of-dissident-right.html">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://affirmativeright.blogspot.com/2021/08/mememitis-disease-of-dissident-right.html">Memeitis, the disease of the Dissident Right</a> <span class="external_site">(Affirmative Right)</span></h2>
-				<p class="excerpt">Bad memes are misinforming people on the War in Afghanistan.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.theoccidentalobserver.net/2021/08/17/kabullshit/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.theoccidentalobserver.net/2021/08/17/kabullshit/">Kabullshit</a> <span class="external_site">(Occidental Observer)</span></h2>
-				<p class="excerpt">"...the real reasons Western countries poured trillions of dollars into [the War in Afghanistan] was because there were real potential benefits to our power elites..."</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/commentary/2021/03/yes-whites-did-build-this-country/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/commentary/2021/03/yes-whites-did-build-this-country/">Yes, Whites Did Build This Country</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">There would be no United States of America without whites.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.amren.com/features/2021/08/the-war-comes-home/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.amren.com/features/2021/08/the-war-comes-home/">The War Comes Home</a> <span class="external_site">(American Renaissance)</span></h2>
-				<p class="excerpt">A reflection on 9/11, the War in Afghanistan, and American society.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://www.revolver.news/2021/08/eu-urgent-memo-highlights-right-wing-memes/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://www.revolver.news/2021/08/eu-urgent-memo-highlights-right-wing-memes/">EU Releases Urgent Memo Highlighting The Dangers of “Right Wing” Memes</a> <span class="external_site">(Revolver)</span></h2>
-				<p class="excerpt">EU report analyses threat of right-wing memes to globalist order.</p>
-			</div>
-			
-			<div class="article">
-				<p class="external_link"><a href="https://summit.news/2021/07/20/top-health-officer-orders-australians-dont-have-a-conversation-with-each-other/">EXTERNAL LINK ↗</a></p>
-				<h2 class="title"><a href="https://summit.news/2021/07/20/top-health-officer-orders-australians-dont-have-a-conversation-with-each-other/">Top Health Officer Orders Australians: ‘Don’t Have a Conversation’ With Each Other</a> <span class="external_site">(Summit News)</span></h2>
-				<p class="excerpt">NSW official: "Whilst it is in human nature to engage in conversation with others, to be friendly, unfortunately this is not the time to do that.”</p>
-			</div>
-			
-			
-			<!-- <p>This site is still being built, so some links are broken. Sorry.</p> -->
-		</div>
+		</div>				<!-- end of .site_main -->
+		
 	</body>
 </html>
